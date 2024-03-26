@@ -6,7 +6,7 @@
 function onMessageSendHandler(event) {
   event.completed({ allowEvent: false, errorMessage: "message" });
 
-  Office.context.mailbox.item.body.getAsync("text", { asyncContext: event }, getBodyCallback);
+  //Office.context.mailbox.item.body.getAsync("text", { asyncContext: event }, getBodyCallback);
 }
 
 function getBodyCallback(asyncResult) {
